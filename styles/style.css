@@ -7,59 +7,44 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    text-decoration: none;
-    color: rgb(111, 100, 150);
-    font-family: Arial, Helvetica, sans-serif;
+nav{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
 }
-
 ul{
     list-style: none;
-    width: 100%;
-    height: 100%;
     display: flex;
-    margin: 20px 0px 30px 0px;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 10px 0px;
 
+}
+@media (max-width: 992px){
+    ul{
+        align-items: flex-end;
+    }
 }
 li{
     margin: 0px 20px 0px 20px;
 }
+.nav-a{
+    color: rgb(111, 100, 150);
+}
+.nav-a:hover{
+    color: rgb(66, 51, 123);
+}
 /* inicio CSS index.html*/
-h1{
-    color: rgb(104, 109, 167);
-    font-size: 25px;
+.titulo-pagina{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 0px;
-}
-h2{
     color: rgb(104, 109, 167);
-    font-size: 16px;
     font-style: normal;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 10px;
 }    
-.box-banner{
-    font-weight: 600;
-    color: rgb(30, 22, 48);
-    background-image: url(../assets/paletas-colores-ordenador-escritorio\ copia.png) ;
-    height: 350px;
-    width: 100%;
-    text-align: center;
-}
-.box-banner2{
-    font-weight: 600;
-    color: rgb(30, 22, 48);
-    background-color: rgb(173, 173, 218);
-    height: 130px;
-    width: 100%;
-    text-align: center;
-}
 .parrafo1{
     color: rgb(62, 54, 124);
     padding: 150px;
@@ -81,8 +66,8 @@ h2{
     justify-content: space-between;
 }
 .imagen-inicio{
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 /* inicio CSS proyectos.html*/
 
