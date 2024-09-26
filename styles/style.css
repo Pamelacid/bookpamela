@@ -99,11 +99,6 @@ li{
     flex-direction: row;
     justify-content: left;
 }
-.imagen-box1{
-    width: 300px;
-    height: 200px;
-    float: left;
-}
 .parrafo-box1{
     padding-left: 30px;
     padding-top: 30px;
@@ -114,11 +109,6 @@ li{
     padding-left: 20%;
     padding-right: 15%;
     padding-top: 30px;
-}
-.imagen-box2{
-    width: 400px;
-    height: 350px;
-    float: left;
 }
 .boton{
     color: rgb(48, 30, 113);
