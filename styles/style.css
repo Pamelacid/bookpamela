@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+p{
+    margin-bottom: 0;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,7 +25,7 @@ ul{
     margin: 0px 0px 10px 0px;
 
 }
-@media (max-width: 992px){
+@media (max-width: 991px){
     ul{
         align-items: flex-end;
     }
@@ -67,16 +69,38 @@ li{
     width: 100%;
     height: 100%;
 }
-/* inicio CSS proyectos.html*/
+.footer-class{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background-color: rgb(164, 170, 221);
+    color: white;
+}
+/* inicio CSS proyectos.html y Servicios.html*/
 
+.box-banner2{
+    background-color: rgb(190, 190, 233);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
 .Titulo-Proyecto{
     color: rgb(62, 54, 124);
-    font-size: 40px;
-    padding-top: 30px
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .Subitulo-Proyecto{
     color: rgb(62, 54, 124);
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .section2{
     align-items: center;
@@ -108,16 +132,26 @@ li{
     padding-right: 15%;
     padding-top: 30px;
 }
-.boton{
+.boton-descargar{
     color: rgb(48, 30, 113);
     width: 150px;
     height: 30px;
+    margin-left: 5%;
 }
-h3{
+h3.h3-class{
     color: rgb(104, 109, 167);
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
     font-style: normal;
-}    
+}
+.h4-class{
+    color: rgb(104, 109, 167);
+    font-size: 17px;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
 .parrafo2{
     color: rgb(104, 109, 167);
     font-size: 15px;
@@ -126,6 +160,22 @@ h3{
 h4{
     color: rgb(104, 109, 167);
 }    
+@media (max-width: 991px){
+    .section-sobremi{
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton-descargar{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /*Contacto.html*/
 
 .contacto{
