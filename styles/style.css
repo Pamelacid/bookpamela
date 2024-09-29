@@ -181,12 +181,12 @@ h4{
 .contacto{
     color: rgb(104, 109, 167);
     font-size: 30px;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
     font-style: normal;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 10px;
-    padding-right: 60px;
 }
 #nombre{
     margin-top: 45px;
@@ -211,8 +211,4 @@ h4{
     display: flex;
     flex-direction: row;
     justify-content: center
-}
-#boton-submit{
-    width: 100px;
-    height: 30px;
 }
