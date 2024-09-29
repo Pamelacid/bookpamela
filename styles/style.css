@@ -213,3 +213,17 @@ h4{
     flex-direction: row;
     justify-content: center
 }
+.btn-outline-primary{
+    background-color: rgb(194, 198, 233);
+    padding: 7px 15px 7px 15px;
+    border: 0;
+    border-radius: 0.375rem;
+    color: rgb(119, 89, 201);
+}
+.btn-outline-primary:hover{
+    background-color: rgb(114, 93, 176);
+    padding: 7px 15px 7px 15px;
+    border: 0;
+    border-radius: 0.375rem;
+    color: white;
+}
