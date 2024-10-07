@@ -1,0 +1,14 @@
+@mixin button-styles ($padding, $radius, $bg-color, $border, $color){
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $bg-color;
+    border: $border;
+    color: $color;
+}
+@mixin encabezado-banner ($color, $f-weight, $f-style, $f-size, $p-top,){
+    color: $color;
+    font-weight: $f-weight;
+    font-style: $f-style;
+    font-size: $f-size;
+    padding-top: $p-top;
+}

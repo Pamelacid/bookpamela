@@ -1,0 +1,162 @@
+//Archivos import
+
+@import 'variable';
+@import 'header';
+@import 'formulario';
+@import 'mixin-extended';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin-bottom: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 991px){
+    ul{
+        align-items: flex-end;
+    }
+}
+/* inicio CSS index.html*/
+.section1{
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 30px;
+}
+.imagen-inicio{
+    width: 100%;
+    height: 100%;
+}
+.footer-class{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background-color: rgb(164, 170, 221);
+    color: white;
+}
+/* inicio CSS proyectos.html y Servicios.html*/
+
+.box-banner2{
+    background-color: rgb(190, 190, 233);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
+.section2{
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 15%;
+    padding-top: 30px;
+}
+.linea{
+    color: cornflowerblue;
+}
+
+.box-image-text{
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.parrafo-box1{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+/* Sobremi.html */
+.section3{
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 15%;
+    padding-top: 30px;
+}
+.boton-descargar{
+    @include button-styles (7px 7px 7px 7px, 0.375rem, $colorlight, 0px, $primarycolor);
+    width: 150px;
+    height: 30px;
+    margin-left: 5%;
+}
+.boton-descargar:hover{
+    @include button-styles (7px 7px 7px 7px, 0.375rem, $primarycolor, 0px, white);
+    width: 150px;
+    height: 30px;
+    margin-left: 5%;
+}
+h3.h3-class{
+    color: rgb(104, 109, 167);
+    font-size: 30px;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+.h4-class{
+    color: rgb(104, 109, 167);
+    font-size: 17px;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+.parrafo2{
+    color: rgb(104, 109, 167);
+    font-size: 15px;
+    font-style: normal;
+}    
+.titulo-pagina{
+    @include encabezado-banner ($secondarycolor, 700, normal, 30px, 30px);
+    font-family: "Roboto", system-ui;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subtitulo-pagina{
+    @include encabezado-banner ($secondarycolor, 400, normal, 18px, 0px);
+    font-family: "Roboto", system-ui;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h4{
+    color: rgb(104, 109, 167);
+}    
+@media (max-width: 991px){
+    .section-sobremi{
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton-descargar{
+        @include button-styles (7px 15px 7px 15px, 0.375rem, $colorlight, 0px, $primarycolor);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+    .boton-descargar:hover{
+        @include button-styles (7px 15px 7px 15px, 0.375rem, $primarycolor, 0px, white);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+}
+.btn-outline-primary{
+    @include button-styles (7px 15px 7px 15px, 0.375rem, $colorlight, 0px, $primarycolor)
+}
+.btn-outline-primary:hover{
+    @include button-styles (7px 15px 7px 15px, 0.375rem, $primarycolor, 0px, white)
+}

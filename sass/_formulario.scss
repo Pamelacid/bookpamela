@@ -1,0 +1,35 @@
+#titulo-contacto{
+    color: $primarycolor;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#nombre{
+    margin-top: 45px;
+    margin-left: 5px;
+    width: 200px;
+    height: 20px;
+}
+#correo{
+    margin-top: 45px;
+    margin-left: 5px;
+    width: 200px;
+    height: 20px;
+}
+#mensaje{
+    margin-top: 45px;
+    margin-left: 5px;
+    width: 200px;
+    height: 200px;
+}
+.box-image-text2{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
