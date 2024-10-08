@@ -4,6 +4,7 @@
 @import 'header';
 @import 'formulario';
 @import 'mixin-extended';
+@import 'index';
 
 *{
     margin: 0;
@@ -28,10 +29,6 @@ body{
     padding-right: 15%;
     padding-top: 30px;
 }
-.imagen-inicio{
-    width: 100%;
-    height: 100%;
-}
 .footer-class{
     width: 100%;
     height: auto;
@@ -40,7 +37,6 @@ body{
     color: white;
 }
 /* inicio CSS proyectos.html y Servicios.html*/
-
 .box-banner2{
     background-color: rgb(190, 190, 233);
     display: flex;

@@ -1,0 +1,45 @@
+.card{
+    border: 0px;
+    color: $colorwhite;
+    background-color: $colormedium;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card-title{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .card-text{
+            margin-bottom: 5%;
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+        .btn-primary{
+            color: $primarycolor;
+            border: 0px;
+            background-color: $colorwhite;
+        }
+        .btn-primary:hover{
+            color: $primarycolor;
+            border: 0px;
+            background-color: $colorlight;
+        }
+    }
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    --bs-gutter-x: 0rem;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
