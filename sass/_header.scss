@@ -1,4 +1,5 @@
 header{
+    background-color: $colorextralight;
     nav{
         display: flex;
         flex-wrap: inherit;
@@ -12,14 +13,21 @@ header{
             width: 100%;
             height: 100%;
             margin: 0px 0px 10px 0px;
+            font-size: 13px;
+            font-style: 700;
             li{
                 margin: 0px 20px 0px 20px;
             }
             .nav-a{
-                color: $primarycolor;
+                color: $colorbefore;
             }
             .nav-a:hover{
                 color: $secondarycolor;
+                border-bottom: solid 0.08rem $secondarycolor
+            }
+            .active-link{
+                color: $secondarycolor;
+                border-bottom: solid 0.08rem $secondarycolor
             }
         }
     }
@@ -29,7 +37,34 @@ header{
         justify-content: space-around;
         color: $primarycolor;
         font-style: normal;
-    }    
+        margin: 1rem 0rem 0rem 0rem;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .subtitulo-sitio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: $primarycolor;
+        font-style: normal;
+        margin: 0rem;
+        font-size: 14px;
+        font-weight: 100;
+        width: 80%;
+    }
+    .line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .line-border{
+            margin-top: 2rem;
+            margin-bottom: 0rem;
+            background-color: rgb(211, 211, 211);
+            width: 100%;
+            height: 0.05rem;
+        }
+    }
     .parrafo1{
         color: rgb(62, 54, 124);
         padding: 150px;

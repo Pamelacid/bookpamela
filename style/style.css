@@ -1,3 +1,6 @@
+header {
+  background-color: rgb(245, 245, 255);
+}
 header nav {
   display: flex;
   flex-wrap: inherit;
@@ -12,15 +15,22 @@ header nav ul {
   width: 100%;
   height: 100%;
   margin: 0px 0px 10px 0px;
+  font-size: 13px;
+  font-style: 700;
 }
 header nav ul li {
   margin: 0px 20px 0px 20px;
 }
 header nav ul .nav-a {
-  color: rgb(104, 109, 167);
+  color: rgb(132, 132, 176);
 }
 header nav ul .nav-a:hover {
   color: rgb(62, 54, 124);
+  border-bottom: solid 0.08rem rgb(62, 54, 124);
+}
+header nav ul .active-link {
+  color: rgb(62, 54, 124);
+  border-bottom: solid 0.08rem rgb(62, 54, 124);
 }
 header .titulo-sitio {
   display: flex;
@@ -28,6 +38,33 @@ header .titulo-sitio {
   justify-content: space-around;
   color: rgb(104, 109, 167);
   font-style: normal;
+  margin: 1rem 0rem 0rem 0rem;
+  font-size: 20px;
+  font-weight: 800;
+}
+header .subtitulo-sitio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(104, 109, 167);
+  font-style: normal;
+  margin: 0rem;
+  font-size: 14px;
+  font-weight: 100;
+  width: 80%;
+}
+header .line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .line .line-border {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  background-color: rgb(211, 211, 211);
+  width: 100%;
+  height: 0.05rem;
 }
 header .parrafo1 {
   color: rgb(62, 54, 124);
@@ -141,6 +178,11 @@ body {
     align-items: flex-end;
   }
 }
+.contenido-total {
+  margin-top: 11rem;
+  width: 80%;
+}
+
 /* inicio CSS index.html*/
 .section1 {
   align-items: center;
@@ -194,6 +236,62 @@ body {
 }
 
 /* Sobremi.html */
+.section-sobremi {
+  background-color: rgb(245, 245, 255);
+  border-radius: 2rem;
+}
+.section-sobremi .div-sobremi {
+  margin: 10%;
+}
+.section-sobremi .div-sobremi .parrafo2 {
+  color: rgb(104, 109, 167);
+  font-size: 13px;
+  font-style: normal;
+  margin-bottom: 5%;
+}
+.section-sobremi .image-perfil {
+  border-radius: 2rem;
+}
+
+.caja-dividida1 {
+  background-color: rgb(245, 245, 255);
+  border-radius: 0rem;
+}
+.caja-dividida1 .div-cajatexto {
+  margin: 10%;
+}
+.caja-dividida1 .div-cajatexto .parrafo2 {
+  color: rgb(104, 109, 167);
+  font-size: 13px;
+  font-style: normal;
+  margin-bottom: 5%;
+}
+.caja-dividida1 .image-perfil {
+  border-radius: 0rem;
+}
+
+.caja-dividida2 {
+  background-color: rgb(104, 109, 167);
+  border-radius: 0rem;
+}
+.caja-dividida2 .div-cajatexto {
+  margin: 10%;
+}
+.caja-dividida2 .div-cajatexto .parrafo2 {
+  font-size: 13px;
+  font-style: normal;
+  margin-bottom: 5%;
+}
+.caja-dividida2 .image-perfil {
+  border-radius: 0rem;
+}
+
+.line-border2 {
+  width: 10rem;
+  height: 0.1rem;
+  background-color: rgb(104, 109, 167);
+}
+
 .section3 {
   align-items: center;
   padding-left: 20%;
@@ -202,7 +300,7 @@ body {
 }
 
 .boton-descargar {
-  padding: 7px 7px 7px 7px;
+  padding: 0px 7px 0px 7px;
   border-radius: 0.375rem;
   background-color: rgb(194, 198, 233);
   border: 0px;
@@ -213,7 +311,7 @@ body {
 }
 
 .boton-descargar:hover {
-  padding: 7px 7px 7px 7px;
+  padding: 0px 7px 0px 7px;
   border-radius: 0.375rem;
   background-color: rgb(104, 109, 167);
   border: 0px;
@@ -236,12 +334,6 @@ h3.h3-class {
   font-size: 17px;
   font-family: "Roboto", system-ui;
   font-weight: 500;
-  font-style: normal;
-}
-
-.parrafo2 {
-  color: rgb(104, 109, 167);
-  font-size: 15px;
   font-style: normal;
 }
 
